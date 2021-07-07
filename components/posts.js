@@ -15,8 +15,8 @@ class PostsComponent extends Component {
             <div>
                 <hr/>
                 <h1>{this.props.id}</h1>
-                <h1>{this.props.title}</h1>
-                <button onClick={() => this.delete(this.props.id)}>Delete</button>
+                <h1 className='title'>{this.props.title}</h1>
+                <button className='delete' onClick={() => this.delete(this.props.id)}>Delete</button>
                 <Link href={`/post/${this.props.id}`}>GO</Link>
             </div>
         )
